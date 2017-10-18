@@ -1,0 +1,13 @@
+@import "./base/_base";
+@import "./base/_color";
+@import "./base/_mixin";
+@import "./base/_reset";
+
+@charset "utf-8";
+
+.login-box{
+  position: fixed;
+  top:50%;
+  margin-top: -74px;
+  width: 100%;
+}

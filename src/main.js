@@ -8,7 +8,13 @@ import router from './router'
 import api from './api/index.js'
 // 在main.js 中引入新建的vuex文件
 import store from './store/index.js'
+// 引用element-ui
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
+
 Vue.config.productionTip = false
+
+Vue.use(ElementUI)
 
 // 将API方法绑定到全局
 Vue.prototype.$api = api

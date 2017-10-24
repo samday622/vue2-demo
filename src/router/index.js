@@ -12,6 +12,10 @@ export default new Router({
       path: '/login', // 登录
       meta: { auth: false },
       component: resolve => require(['@/page/login'], resolve)
+    },
+    {
+      path: '/list',
+      component: resolve => require(['@/page/list'], resolve)
     }
   ]
 })

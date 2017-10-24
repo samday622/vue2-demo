@@ -1,5 +1,5 @@
 // 配置API接口地址
-var root = ''
+var root = '/api/v1'
 // 引用axios
 var axios = require('axios')
 // 自定义判断元素类型JS
@@ -33,7 +33,6 @@ function filterNull (o) {
  */
 
 function apiAxios (method, url, params, success, failure) {
-  debugger
   if (params) {
     params = filterNull(params)
   }

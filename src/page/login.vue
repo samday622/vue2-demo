@@ -26,7 +26,6 @@
 </style>
 <script>
   import { mapActions } from 'vuex'
-  import { USER_SIGNIN } from '../store/user'
 
   export default {
     data () {
@@ -38,7 +37,9 @@
       }
     },
     methods: {
-      ...mapActions([USER_SIGNIN]),
+      ...mapActions([
+        'USER_SIGNIN'
+      ]),
       check: function (event) {
         // 获取值
         var username = this.form.username

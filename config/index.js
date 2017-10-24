@@ -41,6 +41,11 @@ module.exports = {
         target: 'http://localhost:8088', // 你接口的域名
         secure: false,
         changeOrigin: false
+      },
+      '/api/v1/**': {
+        target: 'https://cnodejs.org', // 你接口的域名
+        secure: false,
+        changeOrigin: false
       }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
